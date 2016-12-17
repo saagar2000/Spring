@@ -25,10 +25,9 @@ public class App {
 
 	@Test
 	public void getDocumentFileContact() {
-        DocumentFile docFileContact = documentFileRepository.findOne("doc_contact");
+		DocumentFile docFileContact = documentFileRepository.findOne("doc_contact");
 		Assert.assertNotNull(docFileContact.getUser());
 	}
-
 
 	@Test
 	public void saveDocWithContactRef() {
@@ -39,7 +38,7 @@ public class App {
 		contact.setId("contact");
 		docWithContactRef.setUser(contact);
 		documentFileRepository.save(docWithContactRef);
-		
+
 	}
 
 	@Test
@@ -51,7 +50,7 @@ public class App {
 		user.setId("user");
 		docWithUserRef.setUser(user);
 		documentFileRepository.save(docWithUserRef);
-		
+
 	}
 
 	@Test
@@ -72,8 +71,7 @@ public class App {
 		contact.setAddress("test street");
 		contact.setName("contactName");
 		userRepository.save(contact);
-		
-	}
 
+	}
 
 }

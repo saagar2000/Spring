@@ -10,18 +10,18 @@ import com.mongodb.MongoClient;
 @EnableMongoRepositories
 class SpringAppRepoConfig extends AbstractMongoConfiguration {
 
-  @Override
-  protected String getDatabaseName() {
-    return "test";
-  }
+	@Override
+	protected String getDatabaseName() {
+		return "test";
+	}
 
-  @Override
-  public MongoClient mongo() throws Exception {
-    return new MongoClient();
-  }
+	@Override
+	public MongoClient mongo() throws Exception {
+		return new MongoClient();
+	}
 
-  @Override
-  protected String getMappingBasePackage() {
-    return "com.mongodb.spring_mongo";
-  }
+	@Override
+	protected String getMappingBasePackage() {
+		return "com.mongodb.spring_mongo";
+	}
 }

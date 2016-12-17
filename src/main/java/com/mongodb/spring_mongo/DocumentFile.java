@@ -7,15 +7,15 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "DocumentFile")
 public class DocumentFile {
 
-	  @Id
-    private String id;
-	  
+	@Id
+	private String id;
+
 	public void setId(String id) {
 		this.id = id;
 	}
 
 	@DBRef
-    private User user;
+	private User user;
 
 	public User getUser() {
 		return user;
@@ -24,6 +24,5 @@ public class DocumentFile {
 	public void setUser(User user) {
 		this.user = user;
 	}
-    
-    
+
 }

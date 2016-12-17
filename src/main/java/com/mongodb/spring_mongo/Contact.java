@@ -1,14 +1,14 @@
 package com.mongodb.spring_mongo;
 
-public class Contact extends User{
+public class Contact extends User {
 
-private String address;
+	private String address;
 
-public String getAddress() {
-	return address;
-}
+	public String getAddress() {
+		return address;
+	}
 
-public void setAddress(String address) {
-	this.address = address;
-}
+	public void setAddress(String address) {
+		this.address = address;
+	}
 }

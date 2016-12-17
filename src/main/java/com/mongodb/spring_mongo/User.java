@@ -5,9 +5,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "User")
 public class User {
-   
+
 	@Id
 	private String id;
+
 	public String getId() {
 		return id;
 	}
@@ -25,5 +26,5 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 }
